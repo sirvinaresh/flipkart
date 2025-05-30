@@ -31,7 +31,7 @@ function Header() {
             <NavLink className="text-light nav-link" to="search">Search Page</NavLink>
             <NavLink className="text-light nav-link" to="blog">Blog</NavLink>
             <NavLink className="text-light nav-link" to="fq">FAQs</NavLink>
-            <NavLink className="text-light nav-link" to="tc">Terms & Conditions</NavLink>
+            {/* <NavLink className="text-light nav-link" to="tc">Terms & Conditions</NavLink> */}
             <NavLink className="text-light nav-link" to="contact">Contact</NavLink> 
             <button type="button" class="btn btn-primary position-relative">
               <Link to='cart'> <RiShoppingBag3Line className="fs-4 text-light"  /> </Link>
