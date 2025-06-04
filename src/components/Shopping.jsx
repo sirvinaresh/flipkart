@@ -68,7 +68,7 @@ function Shopping() {
         <Row>
 
             {/* categories */}
-            <Col lg={3} md={4} sm={12} xs={12} className='overflow-auto position-sticky' style={{height:'770px',top:'12%'}}>
+            <Col lg={3} md={4} sm={12} xs={12} className='overflow-auto sidebar' style={{height:'770px',top:'12%'}}>
                <ul style={{listStyle:'none'}} >
                 {
                     data.map((val,i)=>{

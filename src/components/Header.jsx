@@ -23,9 +23,8 @@ function Header() {
       <Container className="py-2 text-light ">
         <HiBars3CenterLeft className="fs-3 me-5" onClick={handleShow}/>
         <Navbar.Brand ><img src={require('./flipkart-plus_8d85f4.png')} alt="" className="w-50"/></Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav"  />
         <Navbar.Collapse id="basic-navbar-nav ">
-          <Nav className="m-auto gap-5">
+          <Nav className="ms-auto gap-4">
             <NavLink className="text-light nav-link" to="/">Home</NavLink>
             <NavLink className="text-light nav-link" to="shop">Shop </NavLink>
             <NavLink className="text-light nav-link" to="search">Search Page</NavLink>
@@ -50,16 +49,16 @@ function Header() {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <Nav className="ms-3 gap-3">
-            <NavLink className="text-black nav-link canva" to="/">Home</NavLink>
-            <NavLink className="text-black nav-link canva" to="shop">Shop </NavLink>
-            <NavLink className="text-black nav-link canva" to="search">Search Page</NavLink>
-            <NavLink className="text-black nav-link canva" to="blog">Blog</NavLink>
-            <NavLink className="text-black nav-link canva" to="fq">FAQs</NavLink>
-            <NavLink className="text-black nav-link canva" to="tc">Terms & Conditions</NavLink>
-            <NavLink className="text-black nav-link canva" to="contact">Contact</NavLink>
-            <NavLink className="text-black nav-link canva" to="cart">My Cart</NavLink>
+            <NavLink className="text-black nav-link canva" onClick={handleClose} to="/">Home</NavLink>
+            <NavLink className="text-black nav-link canva" onClick={handleClose} to="shop">Shop </NavLink>
+            <NavLink className="text-black nav-link canva" onClick={handleClose} to="search">Search Page</NavLink>
+            <NavLink className="text-black nav-link canva" onClick={handleClose} to="blog">Blog</NavLink>
+            <NavLink className="text-black nav-link canva" onClick={handleClose} to="fq">FAQs</NavLink>
+            <NavLink className="text-black nav-link canva" onClick={handleClose} to="tc">Terms & Conditions</NavLink>
+            <NavLink className="text-black nav-link canva" onClick={handleClose} to="contact">Contact</NavLink>
+            <NavLink className="text-black nav-link canva" onClick={handleClose} to="cart" >My Cart</NavLink>
           </Nav>
-        </Offcanvas.Body>
+         </Offcanvas.Body>
       </Offcanvas>
 
       </Container>
