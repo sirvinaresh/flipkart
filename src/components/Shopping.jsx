@@ -106,10 +106,12 @@ function Shopping() {
                             return(
                                 <Col key={i} lg={3} md={6} sm={12} xs={12}>
                                     <Card className='my-4 border-0 shadow ' style={{minHeight:'470px'}}>
-                                        <Card.Img  src={items.thumbnail} />
+                                        <Link to={`details/${items.id}`} className=' brand'><Card.Img  src={items.thumbnail} /></Link>
+
+                                        {/* <Card.Img  src={items.thumbnail} /> */}
                                         <Card.Body>
-                                            <Link to={`details/${items.id}`} className=' brand'>{items.brand}</Link>
-                                            {/* <Card.Link href='' ></Card.Link> */}
+                                            {/* <Link to={`details/${items.id}`} className=' brand'>{items.brand}</Link> */}
+                                            <Card.Title className='mt-3 fs-6 brand'>{items.brand}</Card.Title>
                                             <Card.Title className='mt-3'>{items.title}</Card.Title>
                                             <Card.Text>₹ {items.price}</Card.Text>
                             

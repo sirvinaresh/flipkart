@@ -36,7 +36,7 @@
 
 .brand {
   text-decoration: none;
-  color: gray;
+  color: gray !important;
 }
 
 .nav-link.active {
