@@ -28,8 +28,8 @@ function Cartdis() {
                       item.map((val,i)=>{
                         return(
                           <Card className="rounded-0 border">
-                           <div className="d-flex">
-                            <Card.Img  src={val.thumbnail}  style={{width:'30%'}} />
+                           <div className=" d-lg-flex">
+                              <img src={val.thumbnail} alt=""  className="img-fluid"/>
                             <Card.Body>
                               <Link to={`/details/${val.id}`} className="brand text-black"><Card.Title >{val.title}</Card.Title></Link>
                               <p>{val.sku}</p>
